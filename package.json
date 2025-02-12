@@ -4,7 +4,7 @@
   "description": "tutorial",
   "license": "MIT",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "directories": {
     "doc": "docs"
