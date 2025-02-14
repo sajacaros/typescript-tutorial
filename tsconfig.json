@@ -5,6 +5,7 @@
     "skipLibCheck": true,
     "outDir": "dist",
     "strict": true,
+    "strictNullChecks": true,
     "moduleDetection": "force"
   },
   "include": ["src/**/*.ts"]
