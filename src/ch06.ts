@@ -44,5 +44,15 @@ function voidExam() {
 
 /**
  * any 타입
- * 치트키키
+ * 치트키
  */
+function anyExam() {
+    let unknownVar: unknown;
+    let anyVar: any;
+    let undefinedVar: undefined;
+    let neverType: never;
+
+    anyVar = unknownVar; // 업 캐스팅
+    undefinedVar = anyVar; // any는 다운 캐스팅
+    // neverType = anyVar // never는 공집합이므로 제외
+}
