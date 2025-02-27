@@ -36,13 +36,12 @@ let dog2: Dog = {
     // breed: "Poodle" // 에러, 타입 지정시 프로퍼티 필요함
 };
 
-// 타입 단어 사용
+// 타입 단언언 사용
 let dog3: Dog = {
     name: "dog",
     color: "white",
     breed: "Poodle"
 } as Dog;
-
 
 /**
  * 타입 단언의 규칙
@@ -70,7 +69,7 @@ let cat2: { readonly name: string; readonly color: string } = {
 let cat3 = {
     name: "야옹이",
     color: "white"
-} as const; // cat3는 const 단어시 readonly로 설정됨
+} as const; // cat3는 const 단언시 readonly로 설정됨
 
 /**
  * Non Null 단언
