@@ -6,7 +6,8 @@
     "outDir": "dist",
     "strict": true,
     "strictNullChecks": true,
-    "moduleDetection": "force"
+    "moduleDetection": "force",
+    "allowJs": true
   },
   "include": ["src/**/*.ts"]
 }
