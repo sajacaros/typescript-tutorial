@@ -29,10 +29,22 @@ type PartialUser = {
     [key in "id" | "name" | "age"]?: User[key];
 }
 
-type BooleanUSer = {
+function updateUser2(user: PartialUser) {
+    // 수정하는 기능
+}
+
+updateUser2({ 
+    age: 25,
+});
+
+type BooleanUSer = { // 프로퍼티 자료형 바꾸기
     [key in 'id' | "name" | "age"]: boolean;
 }
 
-type ReadOnlyUser = {
-    [key in keyof User]: User[key] 
+type ReadOnlyUser = { // read only
+    readonly [key in 'id' | "name" | "age"]: User[key] 
+};
+
+type ReadOnlyUser2 = { // keyof 활용
+    readonly [key in keyof User]: User[key] 
 };
